@@ -1,0 +1,69 @@
+# Ignore build and intermediate files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Ignore built packages
+*.ipa
+*.app
+*.dSYM
+*.exe
+*.dll
+*.lib
+*.appx
+*.apk
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+
+# Ignore config backups
+Config/DefaultEditorSettings.ini
+Config/DefaultEditorPerProjectUserSettings.ini
+
+# Ignore marketplace content (huge files)
+Content/StarterContent/
+Content/Marketplace/
+
+# Ignore default Unreal mannequin assets (provided by engine)
+Content/Characters/Mannequin_UE4/
+Content/Characters/Mannequins/
+
+# Ignore other large default content
+Content/LevelPrototyping/
+
+# Ignore generated/downloaded plugins (these should be restored via package manager)
+Plugins/Developer/RiderLink/
+
+# Keep: Source code and configs
+!Source/**
+!Config/**
+!*.uproject
+
+# Selectively include custom content (be specific to avoid default assets)
+!Content/Characters/NPC/
+!Content/ThirdPerson/
+!Content/Collections/
+!Content/Developers/
+
+# Include custom maps and blueprints
+!Content/**/*.umap
+!Content/**/BP_*.uasset
+
+# Include only custom/modified assets (exclude default mannequin content)
+!Content/**/*.uasset
+Content/Characters/Mannequin_UE4/**/*.uasset
+Content/Characters/Mannequins/**/*.uasset
+Content/LevelPrototyping/**/*.uasset
